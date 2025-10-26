@@ -1,0 +1,36 @@
+[
+  {
+    "label": "c++ run",
+    "command": "g++ -std=c++20 -O2 -Wall -Wextra -DLOCAL \"$ZED_FILE\" -o \"$ZED_STEM.exe\" && \"$ZED_STEM.exe\"",
+    "shell": {
+      "program": "cmd.exe"
+    },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "tags": ["cpp-run"]
+  },
+  {
+    "label": "acm",
+    "command": "g++ -std=c++20 -O2 -Wall -Wextra -DLOCAL \"$ZED_FILE\" -o \"$ZED_STEM.exe\" && \"$ZED_STEM.exe\" < \"$ZED_WORKTREE_ROOT\\$ZED_STEM.in\" > \"$ZED_WORKTREE_ROOT\\$ZED_STEM.out\" && del \"$ZED_STEM.exe\"",
+    "shell": {
+      "program": "cmd.exe"
+    },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "no_focus",
+    "hide": "never",
+    "tags": ["cpp-run-input"]
+  },
+  {
+    "label": "c++ debug",
+    "command": "g++ -std=c++20 -g -Wall -Wextra -DLOCAL \"$ZED_FILE\" -o \"$ZED_STEM.exe\"",
+    "shell": {
+      "program": "cmd.exe"
+    },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "no_focus",
+    "tags": ["cpp-debug"]
+  }
+]

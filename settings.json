@@ -1,0 +1,61 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "show_edit_predictions": true,
+  "base_keymap": "VSCode",
+  "icon_theme": "Zed (Default)",
+  "wsl_connections": [
+    {
+      "distro_name": "archlinux",
+      "user": null,
+      "projects": []
+    }
+  ],
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "write",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5"
+    },
+    "model_parameters": []
+  },
+  "edit_predictions": {
+    "mode": "eager"
+  },
+  "languages": {
+    "C++": {
+      "prettier": {
+        "allowed": true
+      },
+      "show_edit_predictions": false
+    },
+    "Rust": {
+      "show_edit_predictions": true,
+      "inlay_hints": {
+        "enabled": true,
+        "show_type_hints": true,
+        "show_parameter_hints": true
+      }
+    }
+  },
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Macchiato - No Italics"
+  },
+  "autosave": "on_focus_change"
+}
